@@ -11,7 +11,7 @@ const Addjob = ({setLoggedin}) => {
 
   const handleAddJob = async () => {
     try {
-      const response = await axios.post('http://10.0.2.2:3001/addjob', job);  // Update with your server URL
+      const response = await axios.post('http://192.168.1.2:3001/addjob', job);  // Update with your server URL
       console.log('Job added:', response.data);
       setIsadd(true);
       Alert.alert('Success', 'Job added successfully!');

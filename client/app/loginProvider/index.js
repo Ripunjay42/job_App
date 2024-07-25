@@ -15,7 +15,7 @@ const LoginScreen = () => {
     console.log('Logging in:', { username, password });
     event.preventDefault();
     try {
-      const response = await axios.post('http://10.0.2.2:3001/login', { username, password });
+      const response = await axios.post('http://192.168.1.2:3001/login', { username, password });
       console.log('User Login:', response.data);
       console.log({username, password});
       setLoggedin(true);

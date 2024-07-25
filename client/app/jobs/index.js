@@ -12,7 +12,7 @@ const JobsScreen = () => {
   useEffect(() => {
     const fetchJobs = async () => {
       try {
-        const response = await axios.get('http://10.0.2.2:3001/jobs');  // Use your server URL here
+        const response = await axios.get('http://192.168.1.2:3001/jobs');  // Use your server URL here
         console.log('Jobs:', response.data);
         setJobs(response.data);
         setLoading(false);

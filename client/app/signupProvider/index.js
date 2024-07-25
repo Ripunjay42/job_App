@@ -12,7 +12,7 @@ const SignUpScreen = () => {
   const handleSignUp = async () => {
     console.log('Signing up:', user);
     try {
-      const response = await axios.post('http://10.0.2.2:3001/signup', user);
+      const response = await axios.post('http://192.168.1.2:3001/signup', user);
       console.log('Registration successful:', response.data);
       setIsRegistered(true);
     } catch (error) {
